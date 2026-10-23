@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tabmate 旅伴帳 支援</title>
+<style>
+  :root {
+    --primary: #0E7C7B;
+    --dark: #12202A;
+    --background: #F2F4F1;
+    --card: #FFFFFF;
+    --secondary-text: #5B6B76;
+    --border: #DDE3E0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--dark);
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.75;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  .subtitle { color: var(--secondary-text); font-size: 0.95rem; margin-bottom: 32px; }
+  .contact-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+  .contact-card a { color: var(--primary); font-weight: 700; text-decoration: none; }
+  .contact-card a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
+  }
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+  .faq-q {
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .faq-q::before { content: "Q. "; color: var(--primary); }
+  .faq-a { color: var(--dark); font-size: 0.95rem; }
+  .faq-a::before { content: "A. "; color: var(--secondary-text); font-weight: 700; }
+  .placeholder {
+    color: #A33A0C;
+    background: #FBE3D6;
+    padding: 1px 6px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 16px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+  th { background: #E7EBE8; color: var(--dark); font-weight: 700; }
+  tr:last-child td { border-bottom: none; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--secondary-text);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--primary); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tabmate 旅伴帳 支援</h1>
+  <p class="subtitle">使用上遇到問題嗎？這裡整理了常見問題與聯絡方式。</p>
+
+  <div class="contact-card">
+    <strong>聯絡我們</strong><br />
+    有任何使用上的問題、意見回饋，或是需要協助處理帳號／儲值相關事宜，歡迎寫信給我們：<br />
+    <span class="placeholder">〔請填聯絡信箱〕</span><br />
+    我們會盡快回覆。
+  </div>
+
+  <h2>常見問題</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">忘記旅程的邀請碼怎麼辦？</div>
+    <div class="faq-a">打開 App，進到那趟旅程的「旅程詳情」畫面，邀請碼跟 QR code 一直都顯示在那裡，可以直接複製連結或分享給旅伴，不用另外去找。如果你本來就不是這趟旅程的成員、也聯絡不到建立旅程的人，目前沒有辦法用邀請碼以外的方式加入，請直接聯絡我們協助處理。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">語音記帳聽錯了，金額或對象記錯怎麼辦？</div>
+    <div class="faq-a">AI 整理完一句話之後，會先顯示「確認草稿」畫面讓你看過，金額、分類、說明，以及新建立的暫稱參與者名字，都可以在送出之前直接修改，不用重講一次。如果是已經按下「確認入帳」之後才發現記錯了，可以到旅程詳情的帳目列表，點那一筆帳目進去編輯（金額、付款人、分攤對象都能改）。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">儲值的 AI 點數可以退款嗎？</div>
+    <div class="faq-a">AI 點數（1 點＝NT$1）一經購買無法退費，但不會過期，會一直保留在你的帳戶裡，之後的語音記帳都能繼續扣抵，不會浪費掉。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">每月免費額度用完了，還能繼續用語音記帳嗎？</div>
+    <div class="faq-a">可以。免費額度用完後，系統會依序改用你的旅程共用錢包、再來是你的個人餘額（如果都沒有餘額，畫面會提示你儲值或請旅伴贊助）。如果完全不想花錢，也可以隨時切換成「手動填寫」，不經過 AI、完全不收費，不受免費額度影響。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">旅伴提到的名字，App 自動建了一個「暫稱參與者」，這是什麼？</div>
+    <div class="faq-a">語音記帳時如果提到一個還沒加入旅程的人名，App 會先幫這個人建一個暫時的分帳身分，讓帳目可以正確算到他頭上，不用等他真的裝了 App 才能記帳。等這個人之後真的用邀請碼加入旅程、暱稱剛好對得上，系統會自動把之前算在他頭上的帳目都歸到他的真帳號，你不用手動搬移。在那之前，這部分金額要麻煩你自己線下跟他收。</div>
+  </div>
+
+  <h2>App 版本資訊</h2>
+  <table>
+    <tr><th>項目</th><th>內容</th></tr>
+    <tr><td>App 名稱</td><td>Tabmate 旅伴帳</td></tr>
+    <tr><td>目前版本</td><td>0.1.0（build 13）</td></tr>
+    <tr><td>平台</td><td>iOS</td></tr>
+  </table>
+
+  <footer>
+    想了解我們怎麼處理你的個人資料，請參考<a href="./index.html">隱私權政策</a>。
+  </footer>
+</main>
+</body>
+</html>
