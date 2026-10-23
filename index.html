@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tabmate 旅伴帳 隱私權政策</title>
+<style>
+  :root {
+    --primary: #0E7C7B;
+    --dark: #12202A;
+    --background: #F2F4F1;
+    --card: #FFFFFF;
+    --secondary-text: #5B6B76;
+    --border: #DDE3E0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--dark);
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.75;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+  .intro {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 16px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+  th {
+    background: #E7EBE8;
+    color: var(--dark);
+    font-weight: 700;
+  }
+  tr:last-child td { border-bottom: none; }
+  .placeholder {
+    color: #A33A0C;
+    background: #FBE3D6;
+    padding: 1px 6px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 6px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--secondary-text);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tabmate 旅伴帳 隱私權政策</h1>
+  <p class="updated">最後更新：<span class="placeholder">〔請填日期〕</span></p>
+
+  <div class="intro">
+    <p>Tabmate 旅伴帳（以下稱「本服務」）由<span class="placeholder">〔請填：個人或公司名義〕</span>提供。使用本服務即表示你同意本政策蒐集、處理、利用你的個人資料的方式。</p>
+  </div>
+
+  <h2>一、我們蒐集什麼資料</h2>
+  <table>
+    <tr><th>類別</th><th>內容</th><th>蒐集方式</th></tr>
+    <tr><td>帳號資料</td><td>顯示名稱、電子郵件</td><td>透過 Google／Apple／LINE 第三方登入取得</td></tr>
+    <tr><td>訪客帳號</td><td>你自己取的暱稱</td><td>選擇「訪客模式」加入旅程時，系統會建立一個沒有真實信箱的暫時帳號，只記錄你的暱稱</td></tr>
+    <tr><td>記帳內容</td><td>你說的話或打的字轉換後的記帳句子、金額、幣別、分攤對象</td><td>你主動輸入</td></tr>
+    <tr><td>使用量資料</td><td>AI 呼叫次數、用量、扣款紀錄</td><td>系統自動記錄</td></tr>
+    <tr><td>裝置資料</td><td>裝置型號、作業系統版本（除錯用）</td><td>系統自動記錄</td></tr>
+  </table>
+  <p>我們<strong>不會</strong>蒐集：你的語音錄音本身（辨識成文字後立即丟棄，不保存錄音檔）、完整的商店購買收據內容（只保留驗證後的交易編號）。</p>
+
+  <h2>二、你的記帳內容會被送到哪裡處理</h2>
+  <p>本服務用 AI 把你說的話轉換成記帳草稿，這段處理可能在海外進行：</p>
+  <ul>
+    <li><strong>免費額度</strong>：由 Groq、Cloudflare Workers AI、Google Gemini 其中一家處理，伺服器多數在美國。Groq、Cloudflare 承諾不會拿你的內容訓練模型；Gemini 免費版的使用條款允許 Google 將內容用於改善產品，如果不希望被這樣使用，可以改用付費額度。</li>
+    <li><strong>付費額度</strong>：透過 AWS Bedrock 處理（新加坡區域啟動全球跨區推論，實際運算可能發生在全球任一 AWS 區域），供應商為 OpenAI、Anthropic、xAI 的模型，這些模型不會拿你的內容訓練。</li>
+    <li><strong>自備 AI 金鑰（進階功能）</strong>：如果你在設定裡填了自己的 OpenAI／Anthropic／xAI 金鑰，內容會直接送到你自己申請的帳號，適用該公司自己的使用條款（例如 xAI 的直接 API 會保存請求內容 30 天供稽核）。</li>
+  </ul>
+  <p>我們只會把「這一句話」「旅伴的暱稱」「幣別」「日期」送給 AI 處理，不會送出你的帳號資料或其他旅程的內容。</p>
+
+  <h2>三、資料保留多久</h2>
+  <ul>
+    <li>語音：辨識完立即丟棄，不保存錄音檔。</li>
+    <li>記帳原始句子：保存在對應的那一筆帳目上，供你之後回看。</li>
+    <li>使用量／扣款紀錄：保留<span class="placeholder">〔請填保留天數〕</span>。</li>
+  </ul>
+
+  <h2>四、你的權利</h2>
+  <p>你可以：查詢、更正我們持有的你的個人資料；要求刪除帳號與相關資料（旅程結算完成後）；隨時停止使用本服務。如需行使以上權利，請聯絡<span class="placeholder">〔請填聯絡信箱〕</span>。</p>
+
+  <h2>五、資料安全</h2>
+  <p>所有 AI 供應商的金鑰集中由後台服務管理，App 和 LINE 端完全不持有任何金鑰。系統記錄（log）不會寫入金鑰、完整語音內容、完整的商店收據。</p>
+
+  <h2>六、兒童與未成年使用者</h2>
+  <p>本服務不是特別針對兒童設計，使用者需年滿<span class="placeholder">〔請填法定年齡〕</span>才能使用。</p>
+
+  <h2>七、政策的修改</h2>
+  <p>我們可能更新本政策，重大變更會在 App 內或此頁面上公告。</p>
+
+  <h2>八、聯絡我們</h2>
+  <p>如對本政策有任何疑問，請聯絡<span class="placeholder">〔請填聯絡信箱〕</span>。</p>
+
+  <footer>
+    Tabmate 旅伴帳
+  </footer>
+</main>
+</body>
+</html>
